@@ -1,3 +1,7 @@
+const minimist = require('minimist')
+
 module.exports = () => {
-  console.log('Welcome to the outside!')
+  const args = minimist(process.argv.slice(2))  // delete first 2 arguments (interpreter + filename)
+  console.log(args)
 }
+
