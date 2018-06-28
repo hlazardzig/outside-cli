@@ -12,9 +12,10 @@ module.exports = async () => {
 
   const results = await axios({
     method: 'get',
-    url: `https://api.ipdata.co/1.1.1.1?api-key=${api_key}`
+    url: `https://api.ipdata.co/?api-key=${api_key}`
   })
 
   const { city, region } = results.data
+  // console.log(`DEBUG: ${city}, ${region}`)
   return `${city}, ${region}`
 }
