@@ -17,3 +17,10 @@ How to create a real-world Node CLI app with Node; Tutorial by https://github.co
     $
     $ outside
     Welcome to the outside!
+
+### Axios and ora
+
+	npm install --save axios ora
+		
+- **axios/axios:** Promise based HTTP client for the browser and node.js
+- **sindresorhus/ora:** Elegant terminal spinner
