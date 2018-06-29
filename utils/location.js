@@ -17,5 +17,10 @@ module.exports = async () => {
 
   const { city, region } = results.data
   // console.log(`DEBUG: ${city}, ${region}`)
+  if (!city) {
+    city = 'Hamburg'
+    region = 'Hamburg'
+    console.log(`Unable to determine city and region, defaulting to ${city}, ${region}`)
+  }
   return `${city}, ${region}`
 }

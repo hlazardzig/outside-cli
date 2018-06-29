@@ -31,7 +31,7 @@ module.exports = () => {
       break
 
     default:
-      console.error(`"${cmd}" is not a valid command!`)
+      error(`"${cmd}" is not a valid command!`, true)
       break
   }
 }
