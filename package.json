@@ -1,7 +1,22 @@
 {
   "name": "outside-cli",
   "version": "1.0.0",
+  "description": "A CLI app that gives you the weather forecast",
   "license": "MIT",
+  "homepage": "https://github.com/hlazardzig/outside-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hlazardzig/outside-cli.git"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "keywords": [
+    "weather",
+    "forecast",
+    "rain"
+  ],
+  "preferGlobal": true,
   "bin": {
     "outside": "bin/outside"
   },
@@ -10,6 +25,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "minimist": "^1.2.0",
-    "ora": "^2.1.0"
+    "ora": "^2.0.0"
   }
 }
+
